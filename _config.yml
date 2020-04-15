@@ -1,0 +1,14 @@
+name: Scott Gardner
+title: Scott Gardner
+description: iOS App Architect / Developer, Author & Apple Certified Trainer
+theme: jekyll-theme-cayman
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: posts
+        values:
+            layout: single
+            author: Scott Gardner
+            permalink: /:title
