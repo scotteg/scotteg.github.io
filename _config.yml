@@ -2,13 +2,19 @@ name: Scott Gardner
 title: Scott Gardner
 description: iOS App Architect / Developer, Author & Apple Certified Trainer
 theme: jekyll-theme-cayman
-
+plugins:
+    - jekyll-feed
 defaults:
     -
         scope:
             path: ""
             type: posts
         values:
-            layout: single
+            layout: default
             author: Scott Gardner
             permalink: /:title
+owner: 
+    name: Scott Gardner
+    avatar: https://avatars2.githubusercontent.com/u/1337867
+    twitter: scotteg
+    linkedin: scotteg
