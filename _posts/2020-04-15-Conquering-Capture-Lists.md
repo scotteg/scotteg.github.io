@@ -1,6 +1,6 @@
 ---
 title: Conquering Capture Lists
-excerpt: "Learn why, when, and how to effectively use capture lists"
+excerpt: "Learn why, when, and how to effectively use capture lists."
 tags: [swift, ios, closures, strong-reference-cycles, capture-lists]
 date: 2020-04-15
 ---
