@@ -21,6 +21,7 @@ date: 2020-04-15
 - [Capture Lists](#capture-lists)
 - [Preventing Strong Reference Cycles in Closures](#preventing-strong-reference-cycles-in-closures)
 - [Capturing Multiple Class References](#capturing-multiple-class-references)
+- [Capture List Decision Flowchart](#capture-list-decision-flowchart)
 - [Conclusion](#conclusion)
 
 ## [Introduction](#introduction)
@@ -594,6 +595,11 @@ This will print:
 deinit
 ```
 
+## [Capture List Decision Flowchart](#capture-list-decision-flowchart)
+
+Use this flowchart to determine if a capture list should be defined in a closure in a class type.
+# ![](Assets/CaptureListDecisionFlowchart.png)
+
 ## [Conclusion](#conclusion)
 
 In this article, you learned about:
@@ -606,11 +612,6 @@ In this article, you learned about:
 6. Using capture lists in escaping closures to prevent strong reference cycles.
 
 You can download the final version of the project in this article <a href="https://github.com/scotteg/CaptureLists/" target="_blank">here</a>.
-
-#### Capture List Decision Flowchart
-
-Use this flowchart to determine if a capture list should be defined in a closure in a class type.
-# ![](Assets/CaptureListDecisionFlowchart.png)
 
 ---
 <span id="1">¹</span> Technically, value types are passed by copy-on-write, which means they won't actually be copied until they need to be mutated.[⏎](#a1)<br>
