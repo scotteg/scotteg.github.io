@@ -1,13 +1,16 @@
 ---
-title: Conquering Capture Lists
-excerpt: "Learn why, when, and how to effectively use capture lists."
+title: Capture Lists
+excerpt: "Capture lists have been available in Swift since its debut at WWDC 2014. They play a crucial role in ensuring your asynchronous code does not leak memory or cause exceptions at runtime. In order to use capture lists correctly, you'll need to have a good grasp of related topics including value vs. reference types, strong reference cycles, and escaping vs. nonescaping closures. In this article, I'll cover these supporting topics first, and then explain why, when, and how to use capture lists effectively."
 tags: [swift, ios, closures, strong-reference-cycles, capture-lists]
 date: 2020-04-15
+redirect_from:
+    - /conquering-capture-lists
+    - /Conquering-Capture-Lists
 ---
 
 [Back]({% link index.md %})
 
-# [Conquering Capture Lists](#conquering-capture-lists)
+# [Capture Lists](#capture-lists)
 
 #### Posted by [scotteg](https://www.linkedin.com/in/scotteg/) on April 15, 2020
 
@@ -18,7 +21,7 @@ date: 2020-04-15
 - [Strong Reference Cycles](#strong-reference-cycles)
 - [Preventing Strong Reference Cycles](#preventing-strong-reference-cycles)
 - [Escaping vs. Nonescaping Closures](#escaping-vs-nonescaping-closures)
-- [Capture Lists](#capture-lists)
+- [Defining Capture Lists](#defining-capture-lists)
 - [Preventing Strong Reference Cycles in Closures](#preventing-strong-reference-cycles-in-closures)
 - [Capturing Multiple Class References](#capturing-multiple-class-references)
 - [Capture List Decision Flowchart](#capture-list-decision-flowchart)
@@ -249,7 +252,7 @@ func execute(action: @escaping () -> Void) {
 
 When an escaping closure parameter of a method<span id="a4">[⁴](#4)</span> references any member of that type, including properties and methods, `self` must be explicitly written. This is enforced by the compiler to make the capture semantics explicit. In other words, the compiler is reminding you of your responsibility to properly handle captures of `self` or any of its members.
 
-## [Capture Lists](#capture-lists)
+## [Defining Capture Lists](#defining-capture-lists)
 
 **Capture lists are primarily used to prevent strong reference cycles in closures.**
 
