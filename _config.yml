@@ -3,6 +3,7 @@ title: Scott Gardner
 description: iOS App Architect / Developer, Author & Apple Certified Trainer
 theme: jekyll-theme-cayman
 permalink: /:name
+google_analytics: UA-164308161-1
 plugins:
     - jekyll-feed
     - jekyll-redirect-from

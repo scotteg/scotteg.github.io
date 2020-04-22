@@ -1,6 +1,6 @@
 ---
 title: Capture Lists
-excerpt: "Capture lists have been available in Swift since its debut at WWDC 2014. They play a crucial role in ensuring your asynchronous code does not leak memory or cause exceptions at runtime. In order to use capture lists correctly, you'll need to have a good grasp of related topics including value vs. reference types, strong reference cycles, and escaping vs. nonescaping closures. In this article, I'll cover these supporting topics first, and then explain why, when, and how to use capture lists effectively."
+excerpt: "Capture lists have been available in Swift since its debut at WWDC 2014. They play a crucial role in ensuring your asynchronous code does not leak memory or cause exceptions at runtime. In order to use capture lists correctly, you'll need a good grasp of related topics including value vs. reference types, strong reference cycles, and escaping vs. nonescaping closures. In this article, I'll cover these supporting topics first, and then explain why, when, and how to use capture lists effectively."
 tags: [swift, ios, closures, strong-reference-cycles, capture-lists]
 date: 2020-04-15
 redirect_from:
@@ -29,7 +29,7 @@ redirect_from:
 
 ## [Introduction](#introduction)
 
-Capture lists have been available in Swift since its debut at WWDC 2014. They play a crucial role in ensuring your asynchronous code does not leak memory or cause exceptions at runtime. In order to use capture lists correctly, you'll need to have a good grasp of related topics including value vs. reference types, strong reference cycles, and escaping vs. nonescaping closures. In this article, I'll cover these supporting topics first, and then explain why, when, and how to use capture lists effectively.
+Capture lists have been available in Swift since its debut at WWDC 2014. They play a crucial role in ensuring your asynchronous code does not leak memory or cause exceptions at runtime. In order to use capture lists correctly, you'll need a good grasp of related topics including value vs. reference types, strong reference cycles, and escaping vs. nonescaping closures. In this article, I'll cover these supporting topics first, and then explain why, when, and how to use capture lists effectively.
 
 ## [Value and Reference Types](#value-and-reference-types)
 
@@ -68,7 +68,7 @@ print(a.value, b.value) // Prints Changed Changed
 
 ## [Strong, Weak, and Unowned References](#strong-weak-and-unowned-references)
 
-*Note: This section introduces some preliminary terminology and theory. These topics will be expanded upon and used in examples throughout the rest of the article.*
+> **Note:** This section introduces some preliminary terminology and theory. These topics will be expanded upon and used in examples throughout the rest of the article.*
 
 A *strong* reference will refuse to release or "let go" of the instance it is referring to. When you define a property of a reference type, it will be a strong reference by default. A strong reference property, once assigned, will not release the instance it refers to until either that property is set to `nil`<span id="a3">[³](#3)</span> or the property's owner is deallocated.
 
@@ -274,7 +274,7 @@ class SomeClass {
 
 In the above code, an unowned capture of `self` is created. Because the capture name is `self`, it is not necessary to explicitly assign it (e.g., `[unowned self = self]`).
 
-> **Tip:** A lazy closure property is treated as an escaping .
+> **Tip:** A lazy closure property is treated as an escaping.
 
 Multiple captures are separated by commas.
 

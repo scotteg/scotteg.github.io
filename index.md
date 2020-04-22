@@ -9,7 +9,7 @@
   {% for post in month.items %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      <br>{{ post.excerpt }}
+      <br>{{ post.excerpt }}<br><br>
     </li>
   {% endfor %}
 </ul>
