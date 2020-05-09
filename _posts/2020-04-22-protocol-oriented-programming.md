@@ -21,6 +21,8 @@ date: 2020-04-22
 - [Dispatch Type Flowchart](#dispatch-type-flowchart)
 - [Conclusion](#conclusion)
 
+---
+
 ## [Introduction](#introduction)
 
 Protocol-oriented programming enables writing code that is more modular, decoupled, and flexible, compared to traditional object-oriented programming. Not surprisingly, protocols are at the heart of protocol-oriented programming. In this article, I'll explain what protocol-oriented programming is and how to adopt this paradigm using protocols to define requirements and provide default implementations, while also ensuring optimum performance.

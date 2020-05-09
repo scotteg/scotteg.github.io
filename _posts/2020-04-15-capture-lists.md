@@ -27,6 +27,8 @@ redirect_from:
 - [Capture List Decision Flowchart](#capture-list-decision-flowchart)
 - [Conclusion](#conclusion)
 
+---
+
 ## [Introduction](#introduction)
 
 Capture lists have been available in Swift since its debut at WWDC 2014. They play a crucial role in ensuring your asynchronous code does not leak memory or cause exceptions at runtime. In order to use capture lists correctly, you'll need a good grasp of related topics including value vs. reference types, strong reference cycles, and escaping vs. nonescaping closures. In this article, I'll cover these supporting topics first, and then explain why, when, and how to use capture lists effectively.
